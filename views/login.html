@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Register Page</title>
+    <title>Login Page</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js"
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
 </head>
 
 <body>
@@ -20,40 +21,30 @@
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">Go</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="/register">Home</a></li>
-                <li><a href="/login">Login</a></li>
+                <li><a href="badges.html">Home</a></li>
+                <li><a href="collapsible.html">Login</a></li>
             </ul>
         </div>
     </nav>
-
     <div class="container">
         <div class="row">
-            <form method="post" class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input type="text" placeholder="Ilham" id="first_name" name="first_name" class="validate">
-                        <label for="first_name">First Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input type="text" placeholder="Muhammad" id="last_name" name="last_name" class="validate">
-                        <label for="last_name">Last Name</label>
-                    </div>
-                </div>
+            <form method="POST" class="col s12">
                 <div class="row">
                     <div class="input-field col s12">
-                        <input type="email" id="email" autocomplete="off" name="email" class="validate">
+                        <input type="email" autocomplete="off" name="username" id="email" class="validate">
                         <label for="email">Email</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <input type="password" id="password" name="password" class="validate">
+                        <input type="password" name="password" id="password" class="validate">
                         <label for="password">Password</label>
                     </div>
                 </div>
                 <div class="row">
                     <button type="submit" class="waves-effect waves-light btn"><i
-                            class="material-icons left"></i>Register</button>
+                            class="material-icons left"></i>Login</button>
+                    <p>Didn't have account? <a href="/register"> Register</a></p>
                 </div>
             </form>
         </div>
